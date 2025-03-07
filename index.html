@@ -23,7 +23,7 @@
             console.log("使用者資訊:", userInfo);
 
             // 送到 Google Apps Script (GAS) 驗證 Email
-            fetch("https://script.google.com/macros/s/AKfycbzt_-SRgSEzCoKugtkejcnu6hZIiFJk80xcH4YIbZrDRUEjvTsrxDla_2GfMLAPGf4-9Q/exec?email=" + userInfo.email)
+            fetch("https://script.google.com/macros/s/AKfycbxPiYIwwFk_FEARJyESPj6EIbJ7-B8N8ukFhpTj6zYuqUClyhzflaj-a1VCxrNDhdvxCg/exec?email=" + userInfo.email)
                 .then(response => response.json())
                 .then(data => {
                     if (data.status === "allowed") {
